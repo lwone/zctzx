@@ -69,8 +69,10 @@ Page({
     }
   },
   onShareAppMessage: function () {
+    //msg
     return {
-      title: '“' + config.getWebsiteName+'”网站微信小程序,基于WordPress版小程序构建.技术支持：www.watch-life.net',
+      //“' + config.getWebsiteName+'”网站微信小程序,基于WordPress版小程序构建.技术支持：www.watch-life.net
+      title: '证才通资讯 - 证书人才头条资讯',
       path: 'pages/index/index',
       success: function (res) {
         // 转发成功

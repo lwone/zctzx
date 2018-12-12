@@ -13,6 +13,14 @@
   /* padding: 0 24rpx; */
   background-color: #fff;
 }
+.searchbox{
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    position: fixed;
+    
+}
 
 .index-header {
   text-align: center;
@@ -20,7 +28,7 @@
   font-size: 30rpx;
   line-height: 40rpx;
   color: #757575;
-  /* margin-top: 5rpx; */
+  margin-top: 16.5%;
 }
 
 /*   index   swiper  */
@@ -115,8 +123,9 @@ swiper .swiper-desc {
 .search-pancel {
   display: flex;
   flex-direction: row;
-  background-color: #eee;
+  background-color: #DF8F55;
   padding: 24rpx 24rpx;
+  /* border-bottom:20rpx solid #8D807F;  */
 }
 
 .search-pancel image {
@@ -132,7 +141,7 @@ display: flex;
 padding: 24rpx 0;
 background: #fff;
 justify-content:space-around;
-/* border-bottom: 1px solid #eee; */
+border-top: 10rpx solid #fff; 
 }
 
 .top-item{
@@ -171,7 +180,8 @@ font-weight: 500;
   padding: 24rpx;
   background: #fff;
   justify-content: space-between;
-  border-bottom: 20rpx solid #eee;
+  border-bottom: 20rpx solid #fff;
+
 }
 
 .top-Nav2-item {
