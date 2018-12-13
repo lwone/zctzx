@@ -378,6 +378,21 @@ Page({
           })
       }
   },
+  jumpxcx:function(e){
+    wx.navigateToMiniProgram({
+      appId: 'wxc741e64ce032049c',
+      envVersion: 'release',
+      path: '',
+      success(res) {
+        // 打开成功
+      },
+      fail: function (res) {
+        console.log(res);
+      }
+    })
+
+  }
+  ,
   //返回首页
   redictHome: function (e) {
     //console.log('查看某类别下的文章');  

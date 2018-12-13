@@ -1,4 +1,31 @@
+<!-- <web-view src="https://headline.zgzsrc.com/kx-xcx"></web-view> -->
 
-<view>
-  <web-view src="https://headline.zgzsrc.com/kx-xcx"></web-view>
+<view class="movie-container">
+  <!-- 导航栏 -->
+  <view class="navbar">
+    <block wx:for="{{navbarTitle}}" wx:key="index">
+      <view class="navbar-item {{navbarActiveIndex === index ? 'navbar-item-active' : ''}}" data-navbar-index="{{index}}" catchtap="onNavBarTap">
+        <text>{{item}}</text>
+      </view>
+    </block>
+  </view>
+  <!-- 内容 -->
+  <view class="movie-content-wrapper">
+    <swiper current="{{navbarActiveIndex}}" bindanimationfinish="onBindAnimationFinish">
+      <swiper-item wx:for="{{navbarTitle}}" wx:key="index">
+        <scroll-view scroll-y="{{true}}" wx:for="{{items}}">
+           {{item.title}}---{{item.tips}}
+        </scroll-view>
+      </swiper-item>
+    </swiper>
+  </view>
 </view>
+<!-- 
+<view>
+  <view>
+    2018年12月13日
+  </view>
+  <view wx:for="{{items}}" wx:for-index="index" wx:for-item="item">
+    {{item.title}}---{{item.tips}}
+  </view>
+</view> -->

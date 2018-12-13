@@ -22,8 +22,7 @@
           <icon type="search" color="#959595" size="12" />
         </button>
       </view>
-    </form>
-    
+    </form> 
 </view>
 
 <view class="index-header" style="display:{{displaySwiper}}">
@@ -88,7 +87,7 @@
       </navigator>
 
 
-      <navigator url="../../pages/list/list?categoryID=1059" hover-class='none'>
+      <navigator bindtap='jumpxcx' hover-class='none'>
         <view class="top-Nav2-item2">
           <!-- <view class="top-Nav2-item-word">
             <text>招聘</text>

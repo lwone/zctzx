@@ -1,0 +1,2 @@
+<!--pages/webinfo/webinfo.wxml-->
+<web-view src="https://headline.zgzsrc.com/kx-xcx"></web-view>

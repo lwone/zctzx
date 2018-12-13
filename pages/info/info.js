@@ -5,13 +5,23 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    items:[],
+    navbarActiveIndex: 0,
+    navbarTitle: [
+      "所有",
+      "Top250",
+      "口碑榜",
+      "新片榜",
+      
+    ]
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    var myThis=this;
+
     wx.setNavigationBarTitle({
       //config.getWebsiteName+
       title: '时政快讯',
@@ -19,6 +29,25 @@ Page({
         // success
       }
     });
+
+    wx.request({
+      url: 'https://headline.zgzsrc.com/kxapi', // 接口
+      data: {
+        
+      },
+      header: {
+        'content-type': 'application/json' // 默认值
+      },
+      success(res) {
+
+        myThis.setData({
+            items:res.data
+          });
+          console.log(res.data);
+      }
+    })
+
+    
   },
 
   /**
@@ -68,5 +97,29 @@ Page({
    */
   onShareAppMessage: function () {
 
+  },
+
+  /**
+   * 点击导航栏
+   */
+  onNavBarTap: function (event) {
+    // 获取点击的navbar的index
+    let navbarTapIndex = event.currentTarget.dataset.navbarIndex
+    // 设置data属性中的navbarActiveIndex为当前点击的navbar
+    this.setData({
+      navbarActiveIndex: navbarTapIndex
+    })
+  },
+
+  /**
+   * 
+   */
+  onBindAnimationFinish: function ({ detail }) {
+    // 设置data属性中的navbarActiveIndex为当前点击的navbar
+    this.setData({
+      navbarActiveIndex: detail.current
+    })
   }
+
+
 })

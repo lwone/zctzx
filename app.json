@@ -14,7 +14,9 @@
     "pages/comments/comments",
     "pages/poster/poster",
     "pages/info/info",
-    "pages/qs/qs"
+    "pages/qs/qs",
+    "pages/webinfo/webinfo",
+    "pages/webqa/webqa"
   ],
   "window": {
     "backgroundTextStyle": "dark",
@@ -35,13 +37,13 @@
         "text": "首页"
       },
       {
-        "pagePath": "pages/info/info",
+        "pagePath": "pages/webinfo/webinfo",
         "iconPath": "images/tar-person.png",
         "selectedIconPath": "images/tar-person-on.png",
         "text": "快讯"
       },
       {
-        "pagePath": "pages/qs/qs",
+        "pagePath": "pages/webqa/webqa",
         "iconPath": "images/tar-topic.png",
         "selectedIconPath": "images/tar-topic-on.png",
         "text": "问答"
@@ -61,11 +63,6 @@
     "downloadFile": 10000
   },
   "navigateToMiniProgramAppIdList": [
-    "wxa43aaa8416cdbd61",
-    "wxe9440e3d24b04152",
-    "wx39075d0bde24f9f7",
-    "wxc1771b619b83316b",
-    "wx074a216a7aabc30c",
-    "wx55ea6098e41af5c4"
+    "wxc741e64ce032049c"
   ]
 }
