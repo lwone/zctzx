@@ -20,13 +20,13 @@
   ],
   "window": {
     "backgroundTextStyle": "dark",
-    "navigationBarBackgroundColor": "#DF8F55",
+    "navigationBarBackgroundColor": "#22AAFE",
     "navigationBarTitleText": "证才通资讯",
     "navigationBarTextStyle": "whlie"
   },
   "tabBar": {
     "color": "#9BABBA",
-    "selectedColor": "#495056",
+    "selectedColor": "#22AAFE",
     "borderStyle": "white",
     "backgroundColor": "#ffffff",
     "list": [
@@ -38,14 +38,14 @@
       },
       {
         "pagePath": "pages/webinfo/webinfo",
-        "iconPath": "images/tar-person.png",
-        "selectedIconPath": "images/tar-person-on.png",
+        "iconPath": "images/kx.png",
+        "selectedIconPath": "images/kx-on.png",
         "text": "快讯"
       },
       {
         "pagePath": "pages/webqa/webqa",
-        "iconPath": "images/tar-topic.png",
-        "selectedIconPath": "images/tar-topic-on.png",
+        "iconPath": "images/qs.png",
+        "selectedIconPath": "images/qs-on.png",
         "text": "问答"
       },
       {

@@ -28,7 +28,7 @@
   font-size: 30rpx;
   line-height: 40rpx;
   color: #757575;
-  margin-top: 16.5%;
+  margin-top: 9.9%;
 }
 
 /*   index   swiper  */
@@ -75,18 +75,18 @@ swiper .swiper-desc {
 
 .search-button {
   border-left: 0 !important;
-  border-top: 1px solid #fff !important;
-  border-right: 1px solid #fff !important;
-  border-bottom: 1px solid #fff !important;
-  background-color: #fff !important;
+  border-top: 0 solid rgba(255, 255, 255, 0.699) !important;
+  border-right: 0 solid rgba(255, 255, 255, 0.699) !important;
+  border-bottom: 0 solid rgba(255, 255, 255, 0.699) !important;
+  background-color: rgba(255, 255, 255, 0.85) !important;
   border-bottom-left-radius: 0;
   border-top-left-radius: 0;
-  border-top-right-radius: 4px;
-  border-bottom-right-radius: 4px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
   color: #296fd0 !important;
   width: 20%;
   margin: 0 !important;
-  box-shadow: 1px 1px 6px #ecf0f0;
+  /* box-shadow: 1px 1px 6px #ecf0f0; */
 }
 
 .search-button icon {
@@ -95,13 +95,13 @@ swiper .swiper-desc {
 }
 
 .search-input {
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.699);
   padding: 16rpx 0 16rpx 32rpx;
   min-height: 1rem;
   font-size: 30rpx;
   /*  position: absolute;*/
-  border-bottom-left-radius: 4px;
-  border-top-left-radius: 4px;
+  border-bottom-left-radius: 20px;
+  border-top-left-radius: 20px;
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
   /* border: 1px solid #ededed;  */
@@ -109,7 +109,7 @@ swiper .swiper-desc {
   height: 48rpx;
   width: 80%;
   text-align: left;
-  box-shadow: 1px 1px 6px #ecf0f0;
+  /* box-shadow: 1px 1px 6px #ecf0f0; */
 }
 
 .share-button {
@@ -123,9 +123,12 @@ swiper .swiper-desc {
 .search-pancel {
   display: flex;
   flex-direction: row;
-  background-color: #DF8F55;
+  /* #DF8F55 */
+  background-color: #22AAFE;
   padding: 24rpx 24rpx;
   /* border-bottom:20rpx solid #8D807F;  */
+  border-bottom-left-radius:50rpx; 
+  border-bottom-right-radius:50rpx;
 }
 
 .search-pancel image {
@@ -191,7 +194,7 @@ font-weight: 500;
   width: 339rpx;
   height: 160rpx;
   border-radius: 8rpx;
-  background-image: url(http://wx2.sinaimg.cn/mw690/d0cdcf72gy1fxkemocghrj209f04gmx2.jpg);
+  background-image: url(https://headline.zgzsrc.com/wp-content/uploads/2018/12/2018121409451815.png);
   background-size:100%;
 }
 
@@ -202,7 +205,7 @@ font-weight: 500;
   width: 339rpx;
   height: 160rpx;
   border-radius: 8rpx;
-  background-image: url(http://wx2.sinaimg.cn/mw690/d0cdcf72gy1fxkemkkrkbj209f04g3yp.jpg);
+  background-image: url(https://headline.zgzsrc.com/wp-content/uploads/2018/12/2018121409451328.png);
   background-size:100%;
 }
 

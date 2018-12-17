@@ -35,8 +35,8 @@ Page({
     displaySwiper: "none",
     floatDisplay: "none",
     displayfirstSwiper:"none",
-    topNav: []
-    
+    topNav: [],
+    inputbg:""
 
   },
   formSubmit: function (e) {
@@ -402,4 +402,5 @@ Page({
       url: url
     });
   }
+
 })

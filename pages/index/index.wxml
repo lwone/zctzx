@@ -13,10 +13,10 @@
 
 <import src="../../templates/common-list.wxml" />
 <import src="../../templates/copyright.wxml" />
-
+<view>
 <view class="searchbox">
  <form catchsubmit="formSubmit" catchreset="formReset" id="search-form">
-      <view class="search-pancel">
+      <view class="search-pancel"  style='background-color:{{inputbg}}'>
         <input value="" id="search-input" name="input" confirm-type="search" class="search-input" placeholder="搜索你感兴趣的内容..." bindconfirm="formSubmit"></input>
         <button class="search-button" form-type="submit" size="mini" plain="true">
           <icon type="search" color="#959595" size="12" />
@@ -116,4 +116,6 @@
       </view>
     </view>
   </view>
+</view>
+
 </view>
