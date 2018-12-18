@@ -35,7 +35,7 @@
 
 swiper.index-swiper {
   position: relative;
-  height: 420rpx;
+  height: 440rpx;
 }
 
 swiper .swiper-mask {
@@ -221,4 +221,13 @@ font-weight: 500;
   background-color: #fff;
   border-radius: 30rpx;
   border: 1rpx #c4c4c4 solid;
+}
+.tx{
+  width: 100rpx;
+  height: 75rpx;
+  background: url('https://headline.zgzsrc.com/wp-content/uploads/2018/12/2018121811211473.png');
+  margin-right: 20rpx;
+  border-radius:500rpx; 
+  padding: 0;
+  background-size:100%; 
 }

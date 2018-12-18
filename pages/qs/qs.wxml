@@ -1,2 +1,5 @@
-<!--pages/qs/qs.wxml-->
-<text>pages/qs/qs.wxml</text>
+<import src="../../wxParse/wxParse.wxml" />
+
+<view class="wxParse">
+  <template is="wxParse" data="{{wxParseData:article}}" />
+</view>

@@ -82,20 +82,25 @@
   position: fixed;
   top: 0;
   z-index: 1;
+  background-color: #22AAFE;
 }
 
 .top-bar-item {
   display: inline-block;
-  background: #fff;
   width: 25%;
-  color: #9babba;
+  color: #D3F3FE;
   text-align: center;
   line-height: 100rpx;
   font-size: 30rpx;
 }
 
 .top-bar-item-Selected {
-  border-bottom: 1px solid #495056;
-  color: #495056;
-  /* font-weight: bold; */
+  /* border-bottom: 1px solid #495056; */
+  color: #ffffff;
+  font-weight: bold;
+}
+.top-bar-item-Selected text{
+  border-bottom: 5rpx solid #ffffff;
+  /* color: #ffffff;
+  font-weight: bold; */
 }

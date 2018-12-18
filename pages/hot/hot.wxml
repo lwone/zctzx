@@ -16,7 +16,7 @@
 
 <view class="top-bar">
     <block wx:for="{{topBarItems}}" wx:key="id">
-        <view class="top-bar-item {{item.selected ? 'top-bar-item-Selected': '' }}" catchtap="onTapTag" id="{{item.id}}">{{item.name}}</view>
+        <view class="top-bar-item {{item.selected ? 'top-bar-item-Selected': '' }}" catchtap="onTapTag" id="{{item.id}}"><text>{{item.name}}</text></view>
     </block>
 </view>
 <view class="container">
@@ -34,7 +34,7 @@
     <view style="display:{{showallDisplay}}">
         <view class="common-list">
             <block wx:key="id" wx:for="{{postsList}}">
-                <view class="list-item has-img" index="{{index}}" id="{{item.post_id}}" bindtap="redictDetail">
+                <view class="list-item has-img" index="{{index}}" id="{{item.post_permalink}}" bindtap="redictDetail" >
                     <view class="content-title">
                         <text>{{item.post_title}}</text>
                     </view>

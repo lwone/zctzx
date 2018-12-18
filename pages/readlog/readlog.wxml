@@ -48,8 +48,6 @@
         <text class="log-text">没有相关文章</text>
       </view>
     </view>
-    <view class="copyright" style="display:{{floatDisplay}}">
-      <template is="tempCopyright" />
-    </view>
+    
   </view>
 </view>

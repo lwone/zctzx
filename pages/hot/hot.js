@@ -121,6 +121,7 @@ Page({
     var getTopHotPostsRequest = wxRequest.getRequest(Api.getTopHotPosts(tab));
     getTopHotPostsRequest.then(response =>{
         if (response.statusCode === 200) {
+          console.log(response.data);
             self.setData({
                 showallDisplay: "block",
                 floatDisplay: "block",
@@ -175,9 +176,9 @@ Page({
   }, 
   // 跳转至查看文章详情
   redictDetail: function (e) {
-    // console.log('查看文章');
+    console.log(e.currentTarget.id);
     var id = e.currentTarget.id,
-      url = '../detail/detail?id=' + id;
+    url = '../webpage/webpage?url='+id;
     wx.navigateTo({
       url: url
     })

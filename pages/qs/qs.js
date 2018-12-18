@@ -1,4 +1,12 @@
-// pages/qs/qs.js
+/**
+ * author:Lwei
+ * 
+ * 为了证才通问答页面，单独开发页面。
+ * 
+ */
+
+var WxParse = require('../../wxHtmltojson/wxParse.js');
+
 Page({
 
   /**
@@ -12,6 +20,9 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    
+    var mythis=this;
+    
     wx.setNavigationBarTitle({
       //config.getWebsiteName+
       title: '问答专区',
@@ -19,6 +30,19 @@ Page({
         // success
       }
     });
+
+    wx.request({
+      url:'https://headline.zgzsrc.com/kx-xcx',
+      method: 'POST',
+      header: { "Content-Type": "application/x-www-form-urlencoded" },
+      data: {},
+      success: function (res) {
+
+        mythis.handlerhtml(res.data);
+
+      }});
+
+    
   },
 
   /**
@@ -67,6 +91,19 @@ Page({
    * 用户点击右上角分享
    */
   onShareAppMessage: function () {
+
+  },
+
+  /**
+   * 处理接收的富文本
+   */
+
+  handlerhtml:function(res){
+      //console.log(res);
+      
+    var htmlarr = WxParse.wxParse('article', 'html', res, this,5);
+
+     console.log(htmlarr);
 
   }
 })
