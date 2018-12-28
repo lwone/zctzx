@@ -1,68 +1,109 @@
 <!-- <web-view src="https://headline.zgzsrc.com/kx-xcx"></web-view> -->
 
 <view class="movie-container">
-  <!-- 导航栏 -->
-  <view class="navbar">
-    <block wx:for="{{navbarTitle}}" wx:key="index">
-      <view class="navbar-item {{navbarActiveIndex === index ? 'navbar-item-active' : ''}}" data-navbar-index="{{index}}" catchtap="onNavBarTap">
-        <text>{{item}}</text>
-      </view>
-    </block>
-  </view>
+  <view class='nav_panel'>
 
+    <scroll-view class="navbar" scroll-x="true" scroll-left="" scroll-with-animation="true">
+
+      <block wx:for="{{navbarTitle}}" wx:key="index">
+        <view class="navbar-item {{navbarActiveIndex === index ? 'navbar-item-active' : ''}}" data-navbar-index="{{index}}" catchtap="onNavBarTap">
+          <text>{{item}}</text>
+        </view>
+      </block>
+
+    </scroll-view>
+  </view>
 
   <!-- 内容 -->
   <view class="movie-content-wrapper">
-    <!-- <swiper current="{{navbarActiveIndex}}" bindanimationfinish="onBindAnimationFinish">
 
-
-      <swiper-item class='itembody'>
-        
-      </swiper-item>
-
-      <swiper-item>
-        <scroll-view scroll-y="{{true}}" wx:for="{{items}}">
-          2
-        </scroll-view>
-      </swiper-item>
-
-      <swiper-item>
-        <scroll-view scroll-y="{{true}}" wx:for="{{items}}">
-
-        </scroll-view>
-      </swiper-item>
-
-      <swiper-item>
-        <scroll-view scroll-y="{{true}}" wx:for="{{items}}">
-
-        </scroll-view>
-      </swiper-item>
-    </swiper> -->
     <view class='itembody'>
       <view class='banner'>
+
         <swiper current="{{navbarActiveIndex}}" bindanimationfinish="onBindAnimationFinish">
-          <swiper-item class="switem-1">
-
+          <swiper-item class="switem-1" wx:for="{{banner}}" wx:key="{{Index}}">
+            <image src='{{item}}' style='width:373px;height:150px'></image>
           </swiper-item>
-          <swiper-item class="switem-1">
 
-          </swiper-item>
-          <swiper-item class="switem-1">
-
-          </swiper-item>
         </swiper>
       </view>
 
       <view class='kx-panel' wx:if="{{navbarActiveIndex==0}}">
-        <view class='kx-item' wx:for="{{items}}">
-            <text>{{item.title}}</text>
-            <text>{{item.tips}}</text>
+        <!-- hot -->
+      
+        <!-- items -->
+        <view class='kx-item' wx:for="{{items}}" wx:key="{{Index}}">
+          <view class='kx-item-left'></view>
+          <view class='kx-item-right'>
+            <navigator url="../kx-detail/kx?id={{item.ID}}" open-type="navigate" hover-class="other-navigator-hover">
+              <view class='kxtitle'>{{item.post_title}}</view>
+              <view class='kxcontent'>
+                <text style='color:#999'>{{item.post_content}}</text>
+              </view>
+              <view class='kxtime'>
+                <text>{{item.post_date}}</text>
+              </view>
+            </navigator>
+          </view>
         </view>
       </view>
 
+      <!-- 政策法规 -->
       <view wx:if="{{navbarActiveIndex==1}}">
-        456
+        <view class='kx-item' wx:for="{{items}}" wx:key="{{Index}}">
+          <view class='kx-item-left'></view>
+          <view class='kx-item-right'>
+            <navigator url="../kx-detail/kx?id={{item.ID}}" open-type="navigate" hover-class="other-navigator-hover">
+              <view class='kxtitle'>{{item.post_title}}</view>
+              <view class='kxcontent'>
+                <text style='color:#999'>{{item.post_content}}</text>
+              </view>
+              <view class='kxtime'>
+                <text>{{item.post_date}}</text>
+              </view>
+            </navigator>
+          </view>
+        </view>
       </view>
+
+      <!-- 资格考试 -->
+      <view wx:if="{{navbarActiveIndex==2}}">
+        <view class='kx-item' wx:for="{{items}}" wx:key="{{Index}}">
+          <view class='kx-item-left'></view>
+          <view class='kx-item-right'>
+            <navigator url="../kx-detail/kx?id={{item.ID}}" open-type="navigate" hover-class="other-navigator-hover">
+              <view class='kxtitle'>{{item.post_title}}</view>
+              <view class='kxcontent'>
+                <text style='color:#999'>{{item.post_content}}</text>
+              </view>
+              <view class='kxtime'>
+                <text>{{item.post_date}}</text>
+              </view>
+            </navigator>
+          </view>
+        </view>
+      </view>
+
+      <!-- 行业新闻-->
+      <view wx:if="{{navbarActiveIndex==3}}">
+        <view class='kx-item' wx:for="{{items}}" wx:key="{{Index}}">
+          <view class='kx-item-left'></view>
+          <view class='kx-item-right'>
+            <navigator url="../kx-detail/kx?id={{item.ID}}" open-type="navigate" hover-class="other-navigator-hover">
+              <view class='kxtitle'>{{item.post_title}}</view>
+              <view class='kxcontent'>
+                <text style='color:#999'>{{item.post_content}}</text>
+              </view>
+              <view class='kxtime'>
+                <text>{{item.post_date}}</text>
+              </view>
+            </navigator>
+          </view>
+        </view>
+      </view>
+
+
     </view>
   </view>
+
 </view>

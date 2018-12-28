@@ -16,11 +16,12 @@
     "pages/info/info",
     "pages/qs/qs",
     "pages/webinfo/webinfo",
-    "pages/webqa/webqa"
+    "pages/webqa/webqa",
+    "pages/kx-detail/kx"
   ],
   "window": {
     "backgroundTextStyle": "dark",
-    "navigationBarBackgroundColor": "#22AAFE",
+    "navigationBarBackgroundColor": "#36B2FE",
     "navigationBarTitleText": "证才通资讯",
     "navigationBarTextStyle": "whlie"
   },
@@ -28,7 +29,7 @@
     "color": "#9BABBA",
     "selectedColor": "#22AAFE",
     "borderStyle": "white",
-    "backgroundColor": "#ffffff",
+    "backgroundColor": "#fbffff",
     "list": [
       {
         "pagePath": "pages/index/index",

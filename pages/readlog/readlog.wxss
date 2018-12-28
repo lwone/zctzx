@@ -27,7 +27,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #22AAFE;
+  background-color: #36B2FE;
   height: 320rpx;
   width: 100%;
   /* position: absolute;
@@ -95,10 +95,11 @@
   text-align: center;
   line-height: 100rpx;
   font-size: 30rpx;
+  margin-right: 30rpx;
 }
 
 .top-bar-item-Selected {
-  border-bottom: 5px solid #fff;
+  border-bottom: 8px solid #fff;
   /* font-weight: bold; */
   color: #FFF;
   font-weight: bold;

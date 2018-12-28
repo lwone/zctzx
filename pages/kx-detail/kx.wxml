@@ -1,0 +1,41 @@
+<view class='color-block'>
+  <view class='body'>
+    <view class='panel'>
+      <!-- title -->
+      <view class='title'>
+        {{items.post_title}}</view>
+
+      <!-- nav -->
+      <view class='nav'>
+        <view class='kxtime'>
+          <view>
+            <image src='../../images/calendar.png' class='icon'></image>{{items.post_date}}
+          </view>
+        </view>
+        <view class="copylink" bindtap='copylink'>
+          [消息来源]
+        </view>
+      </view>
+
+      <!-- main -->
+
+      <view class='content'>
+        <view class="">
+
+        </view>
+        <view>
+          <text>{{items.post_content}}</text>
+        </view>
+      </view>
+
+      <!-- bomnav -->
+      <view class="Bnav" bindtap='back'>
+          
+          
+      </view>
+        
+
+    </view>
+
+  </view>
+</view>

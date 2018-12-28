@@ -14,7 +14,7 @@
   <view class="header">
     <image src="../../images/logo.png" style="height:200rpx;width:400rpx"></image>
     <view style='margin-top:40rpx'>
-      守望生活, 审视自我,宁静雅致的小轩馆.
+      证才通旗下新闻产品，为用户推荐有价值的、个性化的优质内容
     </view>
   </view>
 </template>

@@ -96,7 +96,6 @@ Page({
     wx.checkSession({
       success: function (e) {
         Auth.setUserInfoData(self);
-
       },
       fail: function (e) {
         self.setData({
@@ -130,18 +129,9 @@ Page({
     self.setData({
       topNav: config.getIndexNav
 
-    });
-    
-    wx.checkSession({
-      success:function(e){
-        Auth.setUserInfoData(self);
-        
-      },
-      fail:function(e){
-       
-      }
+    });  
 
-    });     
+
   },
   onShow: function (options) {
     wx.setStorageSync('openLinkCount', 0);

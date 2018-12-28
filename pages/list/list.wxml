@@ -72,7 +72,7 @@
         </view>
 -->
 
-        <view class="no-more" hidden="{{!isLastPage}}">----------无更多文章...---------</view>
+        <view class="no-more" hidden="{{!isLastPage}}">已经加载到天涯海角了！</view>
 
       </view>
 

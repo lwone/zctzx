@@ -19,7 +19,7 @@
   font-weight: normal;
   font-size: 40rpx;
   line-height: 40rpx;
-  color: #21759b;
+  color: #36B2FE;
   border-bottom: 2rpx solid #ededed;
   margin-bottom: 48rpx;
 }
@@ -82,7 +82,7 @@
   position: fixed;
   top: 0;
   z-index: 1;
-  background-color: #22AAFE;
+  background-color: #36B2FE;
 }
 
 .top-bar-item {

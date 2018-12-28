@@ -5,7 +5,7 @@
  * 
  */
 
-var WxParse = require('../../wxHtmltojson/wxParse.js');
+//var WxParse = require('../../wxHtmltojson/wxParse.js');
 
 Page({
 

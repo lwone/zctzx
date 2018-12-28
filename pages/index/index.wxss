@@ -35,7 +35,7 @@
 
 swiper.index-swiper {
   position: relative;
-  height: 440rpx;
+  height: 460rpx;
 }
 
 swiper .swiper-mask {
@@ -124,7 +124,7 @@ swiper .swiper-desc {
   display: flex;
   flex-direction: row;
   /* #DF8F55 */
-  background-color: #22AAFE;
+  background-color: rgba(34, 170, 254, 0.911);
   padding: 24rpx 24rpx;
   /* border-bottom:20rpx solid #8D807F;  */
   border-bottom-left-radius:50rpx; 
@@ -229,5 +229,6 @@ font-weight: 500;
   margin-right: 20rpx;
   border-radius:500rpx; 
   padding: 0;
-  background-size:100%; 
+  background-size:100%;
+  overflow: hidden; 
 }
