@@ -22,7 +22,7 @@
 
         <swiper current="{{navbarActiveIndex}}" bindanimationfinish="onBindAnimationFinish">
           <swiper-item class="switem-1" wx:for="{{banner}}" wx:key="{{Index}}">
-            <image src='{{item}}' style='width:373px;height:150px'></image>
+            <image src='{{item}}' style='width:100%;height:100%'></image>
           </swiper-item>
 
         </swiper>
